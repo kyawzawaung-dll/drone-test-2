@@ -10,9 +10,5 @@ steps:
       - python -m pip install -r requirements.txt
       - flake8
 
-- name: slack-end
-  image: plugins/slack
-  settings:
-    webhook:
 
 
