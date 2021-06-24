@@ -7,5 +7,9 @@ steps:
   - name: lint
     image: python:3.7-alpine
     commands:
-      - python -m pipppp
+      - python -m pippp install -r requirements.txt
+      - flake8
+
+trigger:
+  status:
   - failure
