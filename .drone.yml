@@ -11,8 +11,9 @@ steps:
       - flake8
       
 trigger:
-  branch:
-  - branch1
+  event:
+    exclude:
+    - push
 
 
 
