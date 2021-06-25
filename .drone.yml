@@ -8,4 +8,7 @@ steps:
   commands:
   - git submodule update --init --recursive
 
+platform:
+  os: linux
+  arch: amd64
 
