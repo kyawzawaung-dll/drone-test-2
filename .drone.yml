@@ -2,13 +2,12 @@ kind: pipeline
 type: docker
 name: default
 
-platform:
-  os: linux
-  arch: amd64
-
 steps:
-- name: build
-  image: golang
+- name: ping
+  image: redis
   commands:
-  - go build
-  - go test
+  - redis-cli -h cache ping
+
+services:
+- name: cache
+  image: redis
