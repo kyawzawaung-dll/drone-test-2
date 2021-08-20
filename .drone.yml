@@ -12,6 +12,8 @@ steps:
 
 
 trigger:
-  event:
-    exclude:
-    - push
+  ref:
+    include:
+    - refs/heads/feature-*
+    - refs/pull/**
+    - refs/tags/**
